@@ -6,6 +6,6 @@ engine = create_engine("sqlite:///practice.db")
 metadata = Metada()
 
 table = Table(
-    
+    student,metadata
 )
 
