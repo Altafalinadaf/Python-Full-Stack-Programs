@@ -1,0 +1,162 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Root element of the HTML document, language set to English -->
+
+<head> <!-- Head section, contains metadata -->
+    <meta charset="UTF-8"> <!-- Character encoding, supports most languages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes site responsive on mobile -->
+    <title>Complete HTML Concepts</title> <!-- Title shown in browser tab -->
+</head>
+
+<body> <!-- Body section, contains visible content -->
+
+    <!-- Headings from h1 to h6 -->
+    <h1>PDA College of Engineering</h1> <!-- Largest heading -->
+    <h2>Heading 2</h2> <!-- Second largest heading -->
+    <h3>Heading 3</h3> <!-- Third heading -->
+    <h4>Heading 4</h4> <!-- Fourth heading -->
+    <h5>Heading 5</h5> <!-- Fifth heading -->
+    <h6>Heading 6</h6> <!-- Smallest heading -->
+
+    <!-- Paragraphs and text formatting -->
+    <p><b>Bold Text Example</b></p> <!-- Bold text -->
+    <p><i>Italic Text Example</i></p> <!-- Italic text -->
+    <p><mark>Highlighted Text Example</mark></p> <!-- Highlighted text -->
+    <p><u>Underlined Text Example</u></p> <!-- Underlined text -->
+    <p>H<sub>2</sub>O (Subscript Example)</p> <!-- Subscript text -->
+    <p>10<sup>th</sup> (Superscript Example)</p> <!-- Superscript text -->
+
+    <!-- Line break and horizontal line -->
+    <p>This is line one.<br>This is line two after a break.</p> <!-- <br> breaks line -->
+    <hr> <!-- Horizontal line -->
+
+    <!-- Table Example -->
+    <table border="1"> <!-- Table with border -->
+        <thead> <!-- Table header section -->
+            <tr> <!-- Table row -->
+                <th>Id</th> <!-- Header cell -->
+                <th>Student Name</th> <!-- Header cell -->
+                <th>USN</th> <!-- Header cell -->
+            </tr>
+        </thead>
+        <tbody> <!-- Table body section -->
+            <tr> <!-- First data row -->
+                <td>1</td> <!-- Table data -->
+                <td>Khaleel</td>
+                <td>3gu27ise202</td>
+            </tr>
+            <tr> <!-- Second data row -->
+                <td>2</td>
+                <td>Rahul</td>
+                <td>3gu27is203</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Image with caption -->
+    <figure> <!-- Group image with caption -->
+        <img src="example.jpg" alt="Sample Image" width="200"> <!-- Image with width -->
+        <figcaption>Figure: Example Image with Caption</figcaption> <!-- Caption below image -->
+    </figure>
+
+    <!-- Link -->
+    <a href="https://www.amazon.in/" target="_blank">Amazon Shop</a> <!-- Hyperlink, opens in new tab -->
+
+    <!-- Lists -->
+    <h4>Ordered List</h4>
+    <ol type="1"> <!-- Ordered list with numbers -->
+        <li>Apple</li> <!-- List item -->
+        <li>Orange</li>
+        <li>Grapes</li>
+    </ol>
+
+    <h4>Unordered List</h4>
+    <ul type="disc"> <!-- Unordered list with bullets -->
+        <li>Sanju</li>
+        <li>Khaleel</li>
+        <li>Raju</li>
+    </ul>
+
+    <h4>Description List</h4>
+    <dl> <!-- Description list -->
+        <dt>HTML</dt> <!-- Term -->
+        <dd>Hyper Text Markup Language</dd> <!-- Description -->
+        <dd>Used to create web pages</dd>
+    </dl>
+
+    <!-- Div and Span -->
+    <div>This is inside a DIV (block container)</div> <!-- Div is block-level container -->
+    <p>This is <span>inside a SPAN (inline text)</span></p> <!-- Span is inline container -->
+
+    <!-- Form Example -->
+    <form action=""> <!-- Form starts -->
+        <fieldset> <!-- Groups form elements -->
+            <legend>Personal Information</legend> <!-- Title for group -->
+
+            <label for="name">Name:</label> <!-- Label for input -->
+            <input type="text" id="name"><br><br> <!-- Text input -->
+
+            <label for="age">Age:</label>
+            <input type="number" id="age"><br><br> <!-- Number input -->
+
+            <label>Gender:</label> <!-- Radio buttons -->
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label><br><br>
+
+            <label for="city">City:</label> <!-- Dropdown menu -->
+            <select name="city" id="city">
+                <option value="gulbarga">Gulbarga</option>
+                <option value="raichur">Raichur</option>
+                <option value="bidar">Bidar</option>
+            </select><br><br>
+
+            <textarea rows="5" cols="30" placeholder="Enter your address"></textarea><br><br> <!-- Textarea -->
+
+            <input type="submit" value="Submit"> <!-- Submit button -->
+            <input type="reset" value="Reset"> <!-- Reset button -->
+        </fieldset>
+    </form>
+
+    <!-- Progress and Meter -->
+    <p>Progress Example:</p>
+    <progress value="70" max="100"></progress> <!-- Progress bar (70%) -->
+
+    <p>Meter Example (Battery level):</p>
+    <meter value="0.7" min="0" max="1">70%</meter> <!-- Meter bar -->
+
+    <!-- Details & Summary -->
+    <details> <!-- Collapsible content -->
+        <summary>Click to expand</summary> <!-- Title -->
+        <p>This is hidden content inside details tag.</p> <!-- Hidden content -->
+    </details>
+
+    <!-- Marquee (deprecated, but included for learning) -->
+    <marquee behavior="alternate" direction="right">Scrolling Text</marquee>
+
+    <!-- Audio -->
+    <audio controls> <!-- Audio player -->
+        <source src="happy-birthday-357371.mp3" type="audio/mp3"> <!-- Audio file -->
+        Your browser does not support the audio tag. <!-- Fallback text -->
+    </audio>
+
+    <!-- Video -->
+    <video controls width="300"> <!-- Video player -->
+        <source src="Happy Birthday To You _ Birthday Songs 2025.mp4" type="video/mp4"> <!-- Video file -->
+        Your browser does not support the video tag. <!-- Fallback text -->
+    </video>
+
+    <!-- Iframe Example -->
+    <h4>Embedded YouTube Video</h4>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> <!-- Embedded video -->
+
+    <!-- Semantic Tags -->
+    <header>Header Section</header> <!-- Header of page -->
+    <nav>Navigation Menu</nav> <!-- Navigation section -->
+    <section>Main Section</section> <!-- Section of page -->
+    <article>Article Content</article> <!-- Article content -->
+    <footer>Footer Section</footer> <!-- Footer of page -->
+
+</body>
+
+</html>
