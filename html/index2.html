@@ -88,35 +88,37 @@
     <p>This is <span>inside a SPAN (inline text)</span></p> <!-- Span is inline container -->
 
     <!-- Form Example -->
-    <form action=""> <!-- Form starts -->
-        <fieldset> <!-- Groups form elements -->
-            <legend>Personal Information</legend> <!-- Title for group -->
+    <section id="forms">
+        <form action=""> <!-- Form starts -->
+            <fieldset> <!-- Groups form elements -->
+                <legend>Personal Information</legend> <!-- Title for group -->
 
-            <label for="name">Name:</label> <!-- Label for input -->
-            <input type="text" id="name"><br><br> <!-- Text input -->
+                <label for="name">Name:</label> <!-- Label for input -->
+                <input type="text" id="name"><br><br> <!-- Text input -->
 
-            <label for="age">Age:</label>
-            <input type="number" id="age"><br><br> <!-- Number input -->
+                <label for="age">Age:</label>
+                <input type="number" id="age"><br><br> <!-- Number input -->
 
-            <label>Gender:</label> <!-- Radio buttons -->
-            <input type="radio" name="gender" id="female" value="female">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="male">Male</label><br><br>
+                <label>Gender:</label> <!-- Radio buttons -->
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label><br><br>
 
-            <label for="city">City:</label> <!-- Dropdown menu -->
-            <select name="city" id="city">
-                <option value="gulbarga">Gulbarga</option>
-                <option value="raichur">Raichur</option>
-                <option value="bidar">Bidar</option>
-            </select><br><br>
+                <label for="city">City:</label> <!-- Dropdown menu -->
+                <select name="city" id="city">
+                    <option value="gulbarga">Gulbarga</option>
+                    <option value="raichur">Raichur</option>
+                    <option value="bidar">Bidar</option>
+                </select><br><br>
 
-            <textarea rows="5" cols="30" placeholder="Enter your address"></textarea><br><br> <!-- Textarea -->
+                <textarea rows="5" cols="30" placeholder="Enter your address"></textarea><br><br> <!-- Textarea -->
 
-            <input type="submit" value="Submit"> <!-- Submit button -->
-            <input type="reset" value="Reset"> <!-- Reset button -->
-        </fieldset>
-    </form>
+                <input type="submit" value="Submit"> <!-- Submit button -->
+                <input type="reset" value="Reset"> <!-- Reset button -->
+            </fieldset>
+        </form>
+    </section>
 
     <!-- Progress and Meter -->
     <p>Progress Example:</p>
@@ -167,6 +169,7 @@
         <a href="#">Home</a> |
         <a href="#">About</a> |
         <a href="#">Contact</a>
+        <a href="#forms">forms</a>
     </nav>
 
     <!-- Section of page -->
